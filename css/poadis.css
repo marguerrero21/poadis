@@ -1,0 +1,325 @@
+/*======================================================================*/
+html, body {
+	height: 100%;
+}
+/*======================================================================*/
+
+
+/*======================================================================*/
+.navbar {
+	padding: 25px 40px 15px 40px;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+.navbarLogo {
+	width: 100px;
+}
+
+.nav > li.non-active > a:hover,
+.nav > li.non-active > a:focus,
+.nav > li.dropdown > ul > li:hover,
+.nav > li.active > a {
+	background-color: transparent !important;
+	color: #e74e3e !important;
+	/*font-weight: bold;*/
+	border-bottom: 1px solid #e74e3e;
+}
+/*======================================================================*/
+
+
+/*======================================================================*/
+.container-fluid, 
+.container-fluid > .row {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	height: 100%;
+}
+/*======================================================================*/
+
+
+/*======================================================================*/
+.carousel-caption {
+	margin-top: 15%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	min-width:100%;
+	text-align:center;
+}
+
+.carousel-caption > h1 {
+	font-size: 50px;
+}
+
+.carousel-caption > h1 > .home-page-logo {
+	width: 165px;
+	margin-top: -7px;
+}
+
+.carousel-caption > hr {
+	height: 1px;
+	width: 300px;
+	border: 0;
+
+	background-color: #e74e3e;
+}
+
+.carousel-caption > .home-page-buttons {
+	width: 120px;
+}
+
+.carousel-caption > .home-page-learn {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.carousel, .item, .active {
+	height: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/*======================================================================*/
+
+
+/*======================================================================*/
+.aboutus-page-left {
+	padding: 15%;
+}
+
+.aboutus-page-leftQuote {
+	line-height: 2;
+}
+
+.aboutus-page-rightQuote {
+	/*font-size: 20px;*/
+	padding: 0px 0px 0px 20px;
+	border-color: #e74e3e;
+	border-width: 4px;
+}
+
+.aboutus-page-middleFeat {
+	background-color: red;
+}
+
+.aboutus-page-leftFeat {
+	background-color: #202020;
+	height: 100%;
+	padding-right: 35px;
+}
+
+.aboutus-page-rightFeat {
+	background-color: #dfddde;
+	height: 100%;
+}
+
+.aboutus-page-leftFeat-leftQuote {
+	padding: 0px 20px 0px 0px;
+	border-color: #e74e3e;
+	border-width: 4px;
+	color: #fff;
+}
+
+.aboutus-page-leftFeat-commonTxt {
+	color: #999999;
+}
+
+.aboutus-page-leftFeat-commonTxtTitle {
+	color: #e74e3e;
+}
+
+.aboutus-page-movePic {
+	margin-left: 40px;
+}
+
+.blogs-page, .contactus-page {
+	padding: 0px;
+	margin: 0px;
+}
+
+.blogs-page-topTxt,
+.contactus-page-topTxt {
+	text-align: center;
+	color:#6a6a6a;
+	/*height: 25%;*/
+}
+
+.blogs-page-categ {
+	font-size: 15px;
+	border: none !important;
+	background-color: transparent !important;
+}
+
+.blogs-page-categ > li {
+	margin-right: 25px;
+}
+
+.blogs-page-categ > li.active {
+	margin-right: 25px;
+	font-weight: bold;
+	color: #e74e3e;
+}
+
+.blogs-page-blogs {
+	/*height: 75%;*/
+	padding: 0px;
+	margin: 0px;
+	background-color: #e74e3e;
+}
+
+.blogs-page-blogs > .row {
+	padding: 0px;
+	margin: 0px;
+}
+
+.blogs-page-blogs-img {
+	padding: 0px;
+	margin:0px;
+	background-color: #fff;
+}
+
+.blogs-page-blogs-txt {
+	color: #fff;
+	padding: 0px 10px 0px 10px;
+	/*margin:0px;*/
+}
+
+.blogs-page-blogsHere {
+	padding: 0px;
+	margin: 0px;
+}
+/*======================================================================*/
+
+
+/*======================================================================*/
+.contactus-pgicons {
+	font-size: 15px;
+	color: #888888;
+	margin-right: 15px;
+}
+
+.footer{
+	background-color: #202020;
+}
+
+.footer > .container-fluid {
+	padding: 20px 27px 20px 27px;
+}
+/*======================================================================*/
+
+
+/*======================================================================*/
+.contus-page-emph {
+	color: #e74e3e;
+	font-weight: bold;
+}
+
+.contus-page-emph-body {
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.contus-page-webinars {
+	border-bottom: 1px solid #e74e3e;
+	padding-bottom: 10px;
+	color: #6a6a6a;
+}
+
+.contus-page-webinars-ul {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.contus-page-input,
+.contus-page-input:focus {
+	border: none;
+	box-shadow: none;
+
+	border-bottom: 1px solid #e4e4e4;
+}
+/*======================================================================*/
+
+
+/*======================================================================*/
+.faq-page-scroller {
+	overflow: auto;
+	height: 60%;
+}
+
+.faq-page-overflowBody {
+	overflow:auto;
+	height:80%;
+	background-color: transparent;
+}
+
+.faq-page-overflowBG {
+	background-color: #fff;
+}
+
+.faq-page-overflowBody > div.panel {
+	/*background-color: #fff;*/
+	border: none;
+}
+
+.faq-page-scroller::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+.faq-page-scroller::-webkit-scrollbar-track { background-color: transparent; }
+.faq-page-scroller::-webkit-scrollbar-thumb { background-color: #2d2d2d; }
+.faq-page-scroller::-webkit-scrollbar-button {
+	background-color: transparent;
+	height: 0px;
+	width: 0px;
+} 
+.faq-page-scroller::-webkit-scrollbar-corner { background-color: transparent; }
+/*======================================================================*/
+
+
+/*======================================================================*/
+.manual-page-leftFeat {
+	background-color: #202020;
+	height: 100%;
+	padding-right: 35px;
+}
+
+.manual-page-rightFeat {
+	background-color: #dfddde;
+	/*height: 100%;*/
+}
+
+.manual-page-scroller {
+	padding-left: 35px;
+}
+/*======================================================================*/
+
+
+/*======================================================================*/
+.videos-page-leftFeat-rightQuote {
+	padding: 0px 0px 0px 20px;
+	border-color: #e74e3e;
+	border-width: 4px;
+	color: #fff;
+}
+
+.videos-page-leftFeat {
+	background-color: #202020;
+	height: 100%;
+	padding-left: 35px;
+}
+/*======================================================================*/

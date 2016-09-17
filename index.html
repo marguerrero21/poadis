@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<!-- =========================================================================== -->
+		<title>POADIS</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/yeti-theme.css" rel="stylesheet">
+
+		<link href="css/poadis.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<!-- NAVIGATION -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+		    <div class="container-fluid">
+		        <div class="navbar-header">
+		            <a class="navbar-brand navbar-link" href="#"><img src="img/poadis-color.png" class="navbarLogo"></a>
+		            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1">
+		            	<span class="sr-only">Toggle navigation</span>
+		            	<span class="icon-bar"></span>
+		            	<span class="icon-bar"></span>
+		            	<span class="icon-bar"></span>
+		            </button>
+		        </div>
+		        <div class="collapse navbar-collapse" id="navcol-1">
+		            <ul class="nav navbar-nav navbar-right">
+		                <li class="non-active" role="presentation"><a href="javascript:clickScroll('home');">HOME</a></li>
+		                <li class="non-active" role="presentation"><a href="javascript:clickScroll('aboutus');">ABOUT US</a></li>
+		                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">TRAININGS <span class="caret"></span></a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li role="presentation"><a href="manual.html">Manual </a></li>
+		                        <li role="presentation"><a href="videos.html">Videos &amp; Tutorials</a></li>
+		                        <li role="presentation"><a href="faq.html">FAQ </a></li>
+		                    </ul>
+		                </li>
+		                <li class="non-active" role="presentation"><a href="javascript:clickScroll('blogs');">BLOGS </a></li>
+		                <li class="non-active" role="presentation"><a href="javascript:clickScroll('contactus');triggerAlert();">CONTACT US</a></li>
+		                <li class="non-active" role="presentation"><a href="#">LOGIN</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		</nav>
+		<!-- END: NAVIGATION -->
+		
+		<div class="container-fluid">
+			<!-- Home -->
+			<div class="row home-page" id="home">
+				<div id="homeCarousel" class="carousel slide">
+			        <div class="carousel-inner">
+			            <div class="item active">
+			                <div class="fill" style="background-image:url('img/HomeImg.jpg');"></div>
+			                <div class="carousel-caption">
+			                	<br></br>
+			                    <span>Our Clients Are Our First Priorities</span>
+								<h1>WELCOME TO <img src="img/poadis-color.png" class="home-page-logo"></h1>
+								<hr>
+								<p>
+									Manage all your sites from POADIS. A funding approval software specifically<br>designed fro wireless telecommunication industries.
+								</p>
+
+								<br><br>
+								<a href="#" class="btn btn-sm btn-danger home-page-buttons" role="button">Avail 30 Day Trial</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="#" class="btn btn-sm btn-default home-page-buttons home-page-learn" role="button">Learn More</a>
+			                </div>
+			            </div>
+			            <div class="item">
+			                <div class="fill" style="background-image:url('img/HomeImg.jpg');"></div>
+			                <div class="carousel-caption">
+			                    <h2>Caption 2</h2>
+			                </div>
+			            </div>
+			        </div>
+
+			        <a class="left carousel-control" href="#homeCarousel" data-slide="prev"><span class="icon-prev"></span></a>
+			        <a class="right carousel-control" href="#homeCarousel" data-slide="next"><span class="icon-next"></span></a>
+			    </div>
+			</div>
+			<!-- End: Home -->
+			
+
+			<!-- About Us -->
+		    <div class="row aboutus-page" id="aboutus">
+		    	<span class="hidden-xs hidden-sm"><br><br></span>
+		    	<div class="hidden-xs hidden-sm col-md-6 col-lg-6">
+		    		<img src="img/AboutUs.png" class="img-responsive aboutus-page-left">
+		    	</div>
+
+		    	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		    		<br></br><br></br>
+		    		<p class="lead aboutus-page-leftQuote">
+						<i>&emsp;"Are you a Company Tired of <br>&emsp;&emsp;&emsp;Mismanaged Requests and Transactions?"</i>
+					</p>
+
+					<br></br>
+					<blockquote class="aboutus-page-rightQuote">
+						<h1>MANAGE ALL YOUR SITES<br>FROM POADIS</h1>
+					</blockquote>
+					<small>Funding approval software specifically designed for wireless telecommunication companies.</small>
+					<br></br>
+					<button class="btn btn-danger">SOLUTION</button>
+		    	</div>
+		    </div>
+
+		    <div class="row aboutus-page">
+			    <!-- <div style="width:100%;padding:0px;margin:0px;float:left;" class="img-circle">
+					<img src="img/AboutUs.png" style="height:50px;padding:0px;margin:0px;" class="img-circle">
+				</div> -->
+
+		    	
+
+		    	<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 aboutus-page-rightFeat pull-right">
+		    	</div>
+
+		    	<div class="hidden-xs hidden-sm col-md-5 col-lg-5 aboutus-page-leftFeat pull-left">
+		    		<br><br><br><br><br>
+
+		    		<blockquote class="blockquote-reverse aboutus-page-leftFeat-leftQuote">
+						<h1>P.O. & Deliverable<br>Invoice System</h1>
+					</blockquote>
+
+					<br>&nbsp;</br>
+					<div class="col-md-12 col-lg-12 aboutus-page-movePic">
+						<div class="col-md-11 col-lg-11" style="text-align:right;">
+							<h5 class="hidden-sm aboutus-page-leftFeat-commonTxtTitle text-right">P.O. & REQUEST MONITORING</h5>
+							<p class="hidden-sm hidden-md text-right aboutus-page-leftFeat-commonTxt">
+								<small>
+									Purchase Order and Check Requesting Issuance and receiving software<br>
+									specifically designed for the wireless telecommunication industry
+								</small>
+							</p>
+						</div>
+						<div class="hidden-sm hidden-md col-md-1 col-lg-1 img-circle">
+							<img src="img/monitor.png" style="height:70px;padding:0px;margin:0px;margin-top:7px;" class="img-circle temp">
+						</div>
+					</div>
+
+					<br>&nbsp;</br>
+					<div class="col-md-12 col-lg-12 aboutus-page-movePic">
+						<div class="col-md-11 col-lg-11" style="text-align:right;">
+							<h5 class="hidden-sm aboutus-page-leftFeat-commonTxtTitle text-right">PROJECT TRACKING</h5>
+							<p class="hidden-sm hidden-md text-right aboutus-page-leftFeat-commonTxt">
+								<small>
+									Tracks all projects your company is working to ensure<br>
+									funding is always in place as fast as possble.
+								</small>
+							</p>
+						</div>
+						<div class="hidden-sm hidden-md col-md-1 col-lg-1 img-circle">
+					        <img src="img/tracking.png" style="height:70px;padding:0px;margin:0px;margin-top:7px;" class="img-circle temp">
+						</div>
+					</div>
+
+					<br>&nbsp;</br>
+					<div class="col-md-12 col-lg-12 aboutus-page-movePic">
+						<div class="col-md-11 col-lg-11" style="text-align:right;">
+							<h5 class="hidden-sm aboutus-page-leftFeat-commonTxtTitle text-right">PROJECT STATUS UPDATES</h5>
+							<p class="hidden-sm hidden-md text-right aboutus-page-leftFeat-commonTxt">
+								<small>
+									Status of every project is realtime updated. Deliverables & Invoice<br>
+									are never missed and completed ASAP
+								</small>
+							</p>
+						</div>
+						<div class="hidden-sm hidden-md col-md-1 col-lg-1 img-circle">
+							<img src="img/updated.png" style="height:70px;padding:0px;margin:0px;margin-top:7px;" class="img-circle temp">
+						</div>
+					</div>
+		    	</div>
+		    </div>
+		    <!-- End: About Us -->
+
+		    <!-- Blogs -->
+		    <div class="row blogs-page" id="blogs">
+		    	<span class="hidden-xs hidden-sm"><br><br><br><br></span>
+		    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blogs-page-topTxt">
+		    		<h2><b>BLOGS & ARTICLES</b></h2>
+		    		<small>This will be a sub comment/ message for the blog & articles’ page. This should only be two - three short sentences.</small>
+		    		<br></br>
+		    		<br>
+		    		<ul class="breadcrumb blogs-page-categ">
+						<li class="active">All</li>
+						<li>CATEORY 1</li>
+						<li>CATEORY 2</li>
+						<li class="hidden-xs hidden-sm">CATEORY 3</li>
+						<li class="hidden-xs hidden-sm ">CATEORY 4</li>
+						<li class="hidden-xs hidden-sm ">CATEORY 5</li>
+						<li class="hidden-xs hidden-sm ">CATEORY 6</li>
+					</ul>
+		    	</div>
+
+		    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blogs-page-blogs">
+		    		<div class="row">
+		    			<ul class="col-xs-12 col-sm-6 col-md-4 col-lg-4 media-list blogs-page-blogsHere">
+							<li class="media">
+								<div class="media-left hidden-xs hidden-sm hidden-md blogs-page-blogs-img">
+									<img class="media-object" src="img/81.png" style="height:200px;width:200px;padding:0px;margin:0px;">
+								</div>
+								<div class="media-body blogs-page-blogs-txt">
+				    				<br>
+				    				<h4><b>Title of Article Here</b></h4>
+				    				<small>
+				    					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna <span class="label label-default">Read More</span>
+				    				</small>
+				    				<br></br>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="col-xs-12 col-sm-6 col-md-4 col-lg-4 media-list blogs-page-blogsHere">
+							<li class="media">
+								<div class="media-left hidden-xs hidden-sm hidden-md blogs-page-blogs-img">
+									<img class="media-object" src="img/82.png" style="height:200px;width:200px;padding:0px;margin:0px;">
+								</div>
+								<div class="media-body blogs-page-blogs-txt">
+				    				<br>
+				    				<h4><b>Title of Article Here</b></h4>
+				    				<small>
+				    					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna <span class="label label-default">Read More</span>
+				    				</small>
+				    				<br></br>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="col-xs-12 col-sm-6 col-md-4 col-lg-4 media-list blogs-page-blogsHere">
+							<li class="media">
+								<div class="media-left hidden-xs hidden-sm hidden-md blogs-page-blogs-img">
+									<img class="media-object" src="img/62.png" style="height:200px;width:200px;padding:0px;margin:0px;">
+								</div>
+								<div class="media-body blogs-page-blogs-txt">
+				    				<br>
+				    				<h4><b>Title of Article Here</b></h4>
+				    				<small>
+				    					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna <span class="label label-default">Read More</span>
+				    				</small>
+				    				<br></br>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="col-xs-12 col-sm-6 col-md-4 col-lg-4 media-list blogs-page-blogsHere">
+							<li class="media">
+								<div class="media-left hidden-xs hidden-sm hidden-md blogs-page-blogs-img">
+									<img class="media-object" src="img/61.png" style="height:200px;width:200px;padding:0px;margin:0px;">
+								</div>
+								<div class="media-body blogs-page-blogs-txt">
+				    				<br>
+				    				<h4><b>Title of Article Here</b></h4>
+				    				<small>
+				    					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna <span class="label label-default">Read More</span>
+				    				</small>
+				    				<br></br>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="col-xs-12 col-sm-6 col-md-4 col-lg-4 media-list blogs-page-blogsHere">
+							<li class="media">
+								<div class="media-left hidden-xs hidden-sm hidden-md blogs-page-blogs-img">
+									<img class="media-object" src="img/31.png" style="height:200px;width:200px;padding:0px;margin:0px;">
+								</div>
+								<div class="media-body blogs-page-blogs-txt">
+				    				<br>
+				    				<h4><b>Title of Article Here</b></h4>
+				    				<small>
+				    					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna <span class="label label-default">Read More</span>
+				    				</small>
+				    				<br></br>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="col-xs-12 col-sm-6 col-md-4 col-lg-4 media-list blogs-page-blogsHere">
+							<li class="media">
+								<div class="media-left hidden-xs hidden-sm hidden-md blogs-page-blogs-img">
+									<img class="media-object" src="img/11.png" style="height:200px;width:200px;padding:0px;margin:0px;">
+								</div>
+								<div class="media-body blogs-page-blogs-txt">
+				    				<br>
+				    				<h4><b>Title of Article Here</b></h4>
+				    				<small>
+				    					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna <span class="label label-default">Read More</span>
+				    				</small>
+				    				<br></br>
+								</div>
+							</li>
+						</ul>
+		    		</div>
+		    	</div>
+		    </div>
+		    <!-- End: Blogs -->
+
+		    <!-- Contact Us -->
+		    <div class="row contactus-page" id="contactus">
+		    	<span class="hidden-xs hidden-sm"><br></br><br></br></span>
+		    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contactus-page-topTxt">
+		    		<h2><b>Keep In Touch</b></h2>
+		    		<br>
+		    	</div>
+
+		    	<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+		    		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 pull-right">
+			    		<div class="panel panel-default contus-page-emph-body">
+							<div class="panel-body">
+								<h4 class="contus-page-emph">Our Address</h4>
+								<small class="text-muted">House #13, Streat road, Sydney 2310 Australia</small>
+								<br></br>
+								<h4 class="contus-page-emph">Call Us</h4>
+								<small class="text-muted">+ 880 168 109 1425<br>+ 0216809142</small>
+								<br></br>
+								<h4 class="contus-page-emph">Email Us</h4>
+								<small class="text-muted">contactus@email.com</small>
+							</div>
+						</div>
+
+						<ul class="media-list contus-page-webinars-ul">
+							<li class="media">
+								<div class="media-left media-middle hidden-xs hidden-sm hidden-md">
+									<img class="media-object" src="img/webinars.png" style="height:100px;padding:0px;margin:0px;">
+								</div>
+								<div class="media-body">
+				    				<h4 class="text-muted contus-page-webinars"><b>Join Our Webinars</b></h4>
+				    				<small>Some text regarding the so called webinars and its schedules...</small>
+								</div>
+							</li>
+						</ul>
+			    	</div>
+		    	</div>
+		    	<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+		    		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			    		<div class="panel panel-default contus-page-emph-body">
+							<div class="panel-body">
+								<br>
+								<form class="form-horizontal">
+									<input type="text" class="form-control input-sm contus-page-input" placeholder="Name"><br>
+									<input type="text" class="form-control input-sm contus-page-input" placeholder="Email"><br>
+									<input type="text" class="form-control input-sm contus-page-input" placeholder="Subject"><br>
+
+									<textarea class="form-control input-sm contus-page-input" rows="5" id="textArea" placeholder="Message"></textarea>
+									<br>
+									<a href="#" class="btn btn-sm btn-danger home-page-buttons" role="button">Send Message</a>
+								</form>
+							</div>
+						</div>
+			    	</div>
+		    	</div>
+		    </div>
+		    <footer class="footer hidden-xs hidden-sm hidden-md">
+				<div class="container-fluid">
+					<span class="fa fa-facebook contactus-pgicons"></span>
+					<span class="fa fa-twitter contactus-pgicons"></span>
+					<span class="fa fa-google contactus-pgicons"></span>
+					<span class="fa fa-linkedin contactus-pgicons"></span>
+					<span class="fa fa-tumblr contactus-pgicons"></span>
+					<span class="fa fa-vimeo contactus-pgicons"></span>
+					<small class="text-muted pull-right"><b>POADIS</b> &copy; All Rights Reserved</small>
+				</div>
+			</footer>
+		    <!-- End: Contact Us -->
+		</div>  
+
+
+		<!-- FORCED ALERT -->
+		<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="alertTrigger">
+		Trigger
+		</button>-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						
+						<div class="thumbnail" style="border:none;">
+							<center>
+								<img src="...">
+								<div class="caption">
+									<h3 class="text-muted"><b>NOT SATISFIED YET?<br>REQUEST FOR MORE</b></h3>
+									<hr>
+									<small class="text-muted">This is a small text or catch phrase regarding the said feature.<br>This should not be too long and should be catchy.</small>
+									<br></br>
+									<br></br>
+									<a href="#" class="btn btn-sm btn-danger home-page-buttons" role="button">REQUEST NOW!</a>
+								</div>
+							</center>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End: Forced Alert -->
+
+
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/poadis.js"></script>
+	</body>
+</html>
