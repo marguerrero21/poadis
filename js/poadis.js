@@ -10,9 +10,13 @@ function clickScroll(element){
 }
 
 function triggerAlert(){
-	$('#myModal').modal('show');
+	// $('#myModal').modal('show');
 }
 
 $(document).ready(function(){
-    $('.temp').tooltip({title: "<img src=\"img/AboutUs.png\" style=\"height:50px;padding:0px;margin:0px;\">", html: true, placement: "right"});
+    $('.temp').tooltip({title: "<img src=\"img/AboutUs.png\" style=\"height:50px;padding:0px;margin:0px;\">", html: true, placement: "right"});    
+
+ //    $('#POADIS_howto_userview_I_f2').collapse({
+	// 	toggle: false
+	// })
 });

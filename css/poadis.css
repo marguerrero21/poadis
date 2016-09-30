@@ -97,7 +97,7 @@ html, body {
 
 /*======================================================================*/
 .aboutus-page-left {
-	padding: 15%;
+	padding: 5% 10% 10% 10%;
 }
 
 .aboutus-page-leftQuote {
@@ -298,13 +298,39 @@ html, body {
 	padding-right: 35px;
 }
 
+.manual-page-leftFeat-commonTxtTitle {
+	color: #fff;
+}
+
 .manual-page-rightFeat {
-	background-color: #dfddde;
+	background-color: #f2f1f2;
+	/*background-color: #dfddde;*/
 	/*height: 100%;*/
 }
 
 .manual-page-scroller {
-	padding-left: 35px;
+	padding-left: 30px;
+}
+
+.manual-link {
+	cursor: pointer;
+}
+
+.manual-sub {
+	padding-left: 30px;
+}
+
+.manual-dl-link {
+	margin-top: 15px;
+}
+
+.manual-dl-link > a {
+	border-bottom: dotted 1px;
+	text-decoration: none;
+}
+
+.manual-move-down {
+	margin-top: 15px;
 }
 /*======================================================================*/
 
