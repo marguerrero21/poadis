@@ -20,3 +20,9 @@ $(document).ready(function(){
 	// 	toggle: false
 	// })
 });
+
+function loadvideoUrl(id){
+    document.getElementById("video_curr_play").src = "https://www.youtube.com/embed/"+id;
+    // alert("https://www.youtube.com/watch?v="+id);
+}
+loadvideoUrl("PAr9s9plkyg");

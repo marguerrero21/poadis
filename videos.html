@@ -36,11 +36,11 @@
 		                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">TRAININGS <span class="caret"></span></a>
 		                    <ul class="dropdown-menu" role="menu">
 		                        <li role="presentation"><a href="manual.html">Manual </a></li>
-		                        <li role="presentation"><a href="javascript:alert('Oops! sorry, this page is not yet available. Thank you.');">Videos &amp; Tutorials</a></li><!-- videos.html -->
+		                        <li role="presentation"><a href="videos.html">Videos &amp; Tutorials</a></li>
 		                        <li role="presentation"><a href="javascript:alert('Oops! sorry, this page is not yet available. Thank you.');">FAQ </a></li><!-- faq.html -->
 		                    </ul>
 		                </li>
-		                <li class="non-active" role="presentation"><a href="javascript:clickScroll('blogs');">BLOGS </a></li>
+		                <!-- <li class="non-active" role="presentation"><a href="javascript:clickScroll('blogs');">BLOGS </a></li> -->
 		                <li class="non-active" role="presentation"><a href="javascript:clickScroll('contactus');triggerAlert();">CONTACT US</a></li>
 		                <li class="non-active" role="presentation"><a href="http://staging.poadis.com/login">LOGIN</a></li>
 		            </ul>
@@ -53,122 +53,170 @@
 
 			<!-- About Us -->
 		    <div class="row aboutus-page">
-		    	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 aboutus-page-rightFeat faq-page-overflowBG">
+		    	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 aboutus-page-rightFeat faq-page-overflowBG embed-responsive">
 		    		<br></br><br></br><br>
 		    		<!-- <span class="hidden-xs hidden-sm"><br></br><br></br></span> -->
-		    		<div class="panel panel-default" style="height:80%;">
-						<div class="panel-body">
+		    		<!-- <div class="panel panel-default" style="height:80%;"> -->
+			    		<!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 aboutus-page-rightFeat pull-right embed-responsive"> -->
+							<iframe class="embed-responsive-item" id="video_curr_play" src=""></iframe>
+						<!-- </div> -->
+						<!-- <div class="panel-body"> -->
 							<!-- 16:9 aspect ratio -->
 							<!-- <div class="embed-responsive embed-responsive-16by9">
 								<iframe class="embed-responsive-item" src="https://youtu.be/zpOULjyy-n8"></iframe>
 							</div> -->
-						</div>
-					</div>
+						<!-- </div> -->
+					<!-- </div> -->
 		    	</div>
 
 		    	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 videos-page-leftFeat">
 		    		<br><br><br><br><br>
 
 		    		<blockquote class="blockquote videos-page-leftFeat-rightQuote">
-						<h1 class="text-left">Demos &<br>Tutorials</h1>
+						<h1 class="text-left">Demos & Tutorials</h1>
 					</blockquote>
 
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-page-scroller">
-						<div class="media">
+						
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="PAr9s9plkyg">
 							<div class="media-left">
-								<a href="#">
-									<img class="media-object" src="..." style="width:80px;height:80px;">
-								</a>
+								<img class="media-object" src="http://i1.ytimg.com/vi/PAr9s9plkyg/default.jpg" style="width:50px;height:50px;">
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">Video: Title here!</h4>
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">1. Getting to know the POADIS Dashboard</h4>
 								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
-									<small>
-										sample words and wordings here...
-									</small>
+									<small>www.youtube.com/watch?v=PAr9s9plkyg</small>
 								</p>
 							</div>
 						</div>
 
-						<div class="media">
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="jM9y5r3OSho">
 							<div class="media-left">
 								<a href="#">
-									<img class="media-object" src="..." style="width:80px;height:80px;">
+									<img class="media-object" src="http://i1.ytimg.com/vi/jM9y5r3OSho/default.jpg" style="width:50px;height:50px;">
 								</a>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">Video: Title here!</h4>
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">2.  How to Create a Purchase Order Request</h4>
 								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
-									<small>
-										sample words and wordings here...
-									</small>
+									<small>www.youtube.com/watch?v=jM9y5r3OSho</small>
 								</p>
 							</div>
 						</div>
 
-						<div class="media">
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="IacBJs7FLgw">
 							<div class="media-left">
 								<a href="#">
-									<img class="media-object" src="..." style="width:80px;height:80px;">
+									<img class="media-object" src="http://i1.ytimg.com/vi/IacBJs7FLgw/default.jpg" style="width:50px;height:50px;">
 								</a>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">Video: Title here!</h4>
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">3.  Approving/Rejecting a POR</h4>
 								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
-									<small>
-										sample words and wordings here...
-									</small>
+									<small>www.youtube.com/watch?v=IacBJs7FLgw</small>
 								</p>
 							</div>
 						</div>
 
-						<div class="media">
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="S8u8P-Ur_-Q">
 							<div class="media-left">
 								<a href="#">
-									<img class="media-object" src="..." style="width:80px;height:80px;">
+									<img class="media-object" src="http://i1.ytimg.com/vi/S8u8P-Ur_-Q/default.jpg" style="width:50px;height:50px;">
 								</a>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">Video: Title here!</h4>
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">4. Issue Purchase Order</h4>
 								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
-									<small>
-										sample words and wordings here...
-									</small>
+									<small>www.youtube.com/watch?v=S8u8P-Ur_-Q</small>
 								</p>
 							</div>
 						</div>
 
-						<div class="media">
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="-UXvlNZ28d4">
 							<div class="media-left">
 								<a href="#">
-									<img class="media-object" src="..." style="width:80px;height:80px;">
+									<img class="media-object" src="http://i1.ytimg.com/vi/-UXvlNZ28d4/default.jpg" style="width:50px;height:50px;">
 								</a>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">Video: Title here!</h4>
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">5. Submitting a Deliverable</h4>
 								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
-									<small>
-										sample words and wordings here...
-									</small>
+									<small>www.youtube.com/watch?v=-UXvlNZ28d4</small>
 								</p>
 							</div>
 						</div>
 
-						<div class="media">
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="D82MNFlBZFU">
 							<div class="media-left">
 								<a href="#">
-									<img class="media-object" src="..." style="width:80px;height:80px;">
+									<img class="media-object" src="http://i1.ytimg.com/vi/D82MNFlBZFU/default.jpg" style="width:50px;height:50px;">
 								</a>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">Video: Title here!</h4>
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">6. Approving/Rejecting a DLV</h4>
 								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
-									<small>
-										sample words and wordings here...
-									</small>
+									<small>www.youtube.com/watch?v=D82MNFlBZFU</small>
 								</p>
 							</div>
 						</div>
+
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="41wSuoXBtZE">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="http://i1.ytimg.com/vi/41wSuoXBtZE/default.jpg" style="width:50px;height:50px;">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">7. Creating an Invoice</h4>
+								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
+									<small>www.youtube.com/watch?v=41wSuoXBtZE</small>
+								</p>
+							</div>
+						</div>
+
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="wxTJUqpusas">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="http://i1.ytimg.com/vi/wxTJUqpusas/default.jpg" style="width:50px;height:50px;">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">8. Issuing a Payment</h4>
+								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
+									<small>www.youtube.com/watch?v=wxTJUqpusas</small>
+								</p>
+							</div>
+						</div>
+
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="zYGAhOrAb9Q">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="http://i1.ytimg.com/vi/zYGAhOrAb9Q/default.jpg" style="width:50px;height:50px;">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">9. Confirming a Payment</h4>
+								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
+									<small>www.youtube.com/watch?v=zYGAhOrAb9Q</small>
+								</p>
+							</div>
+						</div>
+
+						<div class="media media-video-link" onclick="loadvideoUrl(this.id);" id="DBdTFj3x2dQ">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="http://i1.ytimg.com/vi/DBdTFj3x2dQ/default.jpg" style="width:50px;height:50px;">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading aboutus-page-leftFeat-commonTxtTitle">10. POADIS Overview</h4>
+								<p class="hidden-sm hidden-md aboutus-page-leftFeat-commonTxt">
+									<small>www.youtube.com/watch?v=DBdTFj3x2dQ</small>
+								</p>
+							</div>
+						</div>
+
+
 					</div>
 		    	</div>
 		    </div>

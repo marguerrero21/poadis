@@ -100,6 +100,11 @@ html, body {
 	padding: 5% 10% 10% 10%;
 }
 
+.aboutus-page-ul > li{
+	font-size: 22px;
+	line-height: 2;
+}
+
 .aboutus-page-leftQuote {
 	line-height: 2;
 }
@@ -124,6 +129,7 @@ html, body {
 .aboutus-page-rightFeat {
 	background-color: #dfddde;
 	height: 100%;
+	padding: 3% 0px 0px 7%;
 }
 
 .aboutus-page-leftFeat-leftQuote {
@@ -347,5 +353,9 @@ html, body {
 	background-color: #202020;
 	height: 100%;
 	padding-left: 35px;
+}
+
+.media-video-link {
+	cursor: pointer;
 }
 /*======================================================================*/
