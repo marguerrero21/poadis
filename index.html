@@ -385,14 +385,14 @@
 			    		<div class="panel panel-default contus-page-emph-body">
 							<div class="panel-body">
 								<br>
-								<form class="form-horizontal">
-									<input type="text" class="form-control input-sm contus-page-input" placeholder="Name"><br>
-									<input type="text" class="form-control input-sm contus-page-input" placeholder="Email"><br>
-									<input type="text" class="form-control input-sm contus-page-input" placeholder="Subject"><br>
+								<form id="contact-form" class="form-horizontal">
+									<input type="text" name="fullname" class="form-control input-sm contus-page-input" placeholder="Name"><br>
+									<input type="text" name="email" class="form-control input-sm contus-page-input" placeholder="Email"><br>
+									<input type="text" name="subject" class="form-control input-sm contus-page-input" placeholder="Subject"><br>
 
-									<textarea class="form-control input-sm contus-page-input" rows="5" id="textArea" placeholder="Message"></textarea>
+									<textarea name="msg" class="form-control input-sm contus-page-input" rows="5" id="textArea" placeholder="Message"></textarea>
 									<br>
-									<a href="#" class="btn btn-sm btn-danger home-page-buttons" role="button">Send Message</a>
+									<a href="#!" id="submit-contact" class="submit-btn btn btn-sm btn-danger home-page-buttons" role="button">Send Message</a>
 								</form>
 							</div>
 						</div>
@@ -426,7 +426,7 @@
 						
 						<div class="thumbnail" style="border:none;">
 							<center>
-								<img src="...">
+								<img src="#">
 								<div class="caption">
 									<h3 class="text-muted"><b>NOT SATISFIED YET?<br>REQUEST FOR MORE</b></h3>
 									<hr>
@@ -449,15 +449,6 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/poadis.js"></script>
 
-		<!-- Start of Async HubSpot Analytics Code -->
-		<script type="text/javascript">
-			(function(d,s,i,r) {
-				if (d.getElementById(i)){return;}
-				var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-				n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2315168.js';
-				e.parentNode.insertBefore(n, e);
-			})(document,"script","hs-analytics",300000);
-		</script>
-		<!-- End of Async HubSpot Analytics Code -->
+		
 	</body>
 </html>
