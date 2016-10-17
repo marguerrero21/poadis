@@ -5,6 +5,17 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+		<meta name="description" content="Funding Approval Software Specifically Designed for the Wireless Telecommunications Industry."/>
+		<meta name="keywords" content="poadis, wireless telecommunication, site acquisition, project management, purchase order request, funding approval, invoicing software" />
+
+		<meta property="og:title" content="Poadis"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="img/poadis-color.png"/>
+		<meta property="og:url" content="http://poadis.com"/>
+		<meta property="og:description" content="Funding Approval Software Specifically Designed for the Wireless Telecommunications Industry."/>
+
+
 		<link rel="icon" href="img/logo.ico">
 		<!-- =========================================================================== -->
 		<title>POADIS</title>
@@ -32,8 +43,10 @@
 		        </div>
 		        <div class="collapse navbar-collapse" id="navcol-1">
 		            <ul class="nav navbar-nav navbar-right">
-		                <li class="non-active" role="presentation"><a href="javascript:clickScroll('home');">HOME</a></li>
-		                <li class="non-active" role="presentation"><a href="javascript:clickScroll('aboutus');">ABOUT US</a></li>
+		                <li id="menu-home" class="menu non-active" role="presentation"><a href="#home">HOME</a></li>
+		                <li id="menu-about-us" class="menu non-active" role="presentation"><a href="javascript:clickScroll('aboutus');">ABOUT US</a></li>
+		                <!-- <li class="non-active" role="presentation"><a href="javascript:clickScroll('blogs');">BLOGS </a></li> -->
+		                <li id="menu-contact-us" class="menu non-active" role="presentation"><a href="javascript:clickScroll('contactus');triggerAlert();">CONTACT US</a></li>
 		                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">TRAININGS <span class="caret"></span></a>
 		                    <ul class="dropdown-menu" role="menu">
 		                        <li role="presentation"><a href="manual.html">Manual </a></li>
@@ -41,9 +54,7 @@
 		                        <!-- <li role="presentation"><a href="javascript:alert('Oops! sorry, this page is not yet available. Thank you.');">FAQ </a></li> -->
 		                    </ul>
 		                </li>
-		                <!-- <li class="non-active" role="presentation"><a href="javascript:clickScroll('blogs');">BLOGS </a></li> -->
-		                <li class="non-active" role="presentation"><a href="javascript:clickScroll('contactus');triggerAlert();">CONTACT US</a></li>
-		                <li class="non-active" role="presentation"><a href="http://staging.poadis.com/login">LOGIN</a></li>
+		                <li class="non-active" role="presentation"><a href="http://app.poadis.com/login">LOGIN</a></li>
 		            </ul>
 		        </div>
 		    </div>
@@ -109,27 +120,11 @@
 		    	<span class="hidden-xs hidden-sm"><br><br><br><br></span>
 		    	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
 		    		<h2><center>POADIS Overview Video</center></h2>
-		    		<img src="img/AboutUs.png" class="img-responsive aboutus-page-left">
+
+		    		<div class="imac-wrapper">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/DBdTFj3x2dQ?&origin=http://poadis.com" frameborder="0" allowfullscreen></iframe>
+					</div>
 		    	</div>
-		    	<!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<h2><center>What & Why You Should Use POADIS </center></h2>
-		    		<img src="img/AboutUs2.jpg" class="img-responsive" style="padding-top:;">
-		    	</div> -->
-
-		    	<!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		    		<br></br><br></br>
-		    		<p class="lead aboutus-page-leftQuote">
-						<i>&emsp;"Are you a Company Tired of <br>&emsp;&emsp;&emsp;Mismanaged Requests and Transactions?"</i>
-					</p>
-
-					<br></br>
-					<blockquote class="aboutus-page-rightQuote">
-						<h1>MANAGE ALL YOUR SITES<br>FROM POADIS</h1>
-					</blockquote>
-					<small>Funding approval software specifically designed for wireless telecommunication companies.</small>
-					<br></br>
-					<button class="btn btn-danger">SOLUTION</button>
-		    	</div> -->
 		    </div>
 
 		    <div class="row aboutus-page">
@@ -392,7 +387,7 @@
 
 									<textarea name="msg" class="form-control input-sm contus-page-input" rows="5" id="textArea" placeholder="Message"></textarea>
 									<br>
-									<a href="#!" id="submit-contact" class="submit-btn btn btn-sm btn-danger home-page-buttons" role="button">Send Message</a>
+									<a href="#!" data-loading-text=" <i class='fa fa-circle-o-notch fa-spin'></i> Sending ....." id="submit-contact" class="submit-btn btn btn-sm btn-danger home-page-buttons" role="button"> Send Message</a>
 								</form>
 							</div>
 						</div>
@@ -443,6 +438,79 @@
 			</div>
 		</div>
 		<!-- End: Forced Alert -->
+
+
+		<!--- Modals -->
+		<div class="modal fade" tabindex="-1" role="dialog" id="modal-success">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Contact</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Thanks for sending us a message. We will contact you the soonest.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" data-dismiss="modal" class="btn btn-primary">GOT IT</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal #modal-success-->
+
+		<div class="modal fade" tabindex="-1" role="dialog" id="modal-invalid-form">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Contact</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Please fill in the required fields properly.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" data-dismiss="modal" class="btn btn-primary">GOT IT</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal #modal-success-->
+
+
+		<div class="modal fade" tabindex="-1" role="dialog" id="modal-error">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Contact</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Ooops! Something went wrong. It's either there's a server error or you already send a message. </p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" data-dismiss="modal" class="btn btn-primary">GOT IT</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal #modal-success-->
+
+
+		<div class="modal fade" tabindex="-1" role="dialog" id="modal-overview">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title"></h4>
+		      </div>
+		      <div class="modal-body">
+		        <!-- <iframe id="overview-video" class="embed-responsive-item" type="text/html" width="100%" height="350" 
+  				src=""
+  					frameborder="0"></iframe> -->
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal #modal-success-->
+
+		<!-- Modals -->
 
 
 		<script src="js/jquery-3.1.0.min.js"></script>

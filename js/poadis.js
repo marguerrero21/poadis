@@ -1,5 +1,6 @@
 
 function clickScroll(element){
+    $('.menu').removeClass('active');
     var temp = document.getElementById(element);
     if(temp === null){
         window.location = "index.html#"+element;
@@ -28,14 +29,14 @@ function loadvideoUrl(id){
 }
 loadvideoUrl("DBdTFj3x2dQ");
 
-
+// Follows Modular Pattern
 (function() {
     var Website = {
 
         init : function(){
             Website.config = {
-                'endpoint' : "http://api-dev.poadis.com/api/contact",
-                'token'    : "uDuwWqWgVJYOs94kS6bWX5JscWd+EMV4YKjuaUAXZXwA5LkfuF2RyBhqyKyMQqypoe7JWUJFXLpd+y1arh3BqAu1hvloWbzKipHqAkIi//xoKrZrP/udth/FrP19vkpLXR9gVb3NcJK2pJ3B+3TNr/zfildTi5Mqzpml00UnTTYyxYUoYUb324NPqil5cno2OPAZRrWtgMVC/GAP0eKSR+vY6iar53k9JGyb8GJM8sYASGHS+3z3lfZU1lDHZGVuiqn/r6K11OzjLcX4P0VLKs/yYLoq6QlyukoNa2QMkc1vqPMuWrpjXmVPuK6c+CWFXWSZeBD0ZY3UxXzNnPJxDbsSYVAIa7ZcO0JNVfCu1zw2ZOgEgEKGQc3xPqGq6HwKHPcUVoTSw353ryaAoa6YGtalnX8tIgD7qucLqChcYkn2bz3DoyXx3nPnoaiyKq6aSDjO9S1OQp7Xx7awQtH+KcbuZ/FSpqyp4z8mx7E4k7natgmjekIvEd6dgWr/y7Qv+0c5kGHLZQthS7WjZGrjh90i8rOplt801mpwlCOj6nP/N/jm2cJy2v6URv2aPM1EB2eK0VkBvzGohIKZO1Uc8l7vdWS7oBuvbyZ3aJ4xpce4skEemxj+Cn/3XuV62yGqvvVRBe25tecErthPOWwyAtR1DVLsyMSS+YaTqAxBN1g="    
+                'endpoint' : "//api.poadis.com/api/contact",
+                'token'    : "H4i/iUJn17aZvPCCXFcvIqLMJhTiIPQ2waQtv65egjTlrgGl3UP6J5m1Wbg+UmrWr3+wWFSG4vRuEvRwnwS7BDPS594jdZjd355QNQ6nu02mau5D0q0zp3xAwdHPuN4m8pTolo/Z8XhMcwWFvg+4jS6x9AfYUL+HeD+i5+C1V7jXLcg9I8LRYVw1n2GP6oMzlJCwRAW3G5j9H7jjX40c1lKbSyJpgqetf9w6rsK4WxmUlBfPpknpkInKNMGvmhWhOU6ndMfrit5t2ovPX4zXiEBaND2j8a7R66hpNScW4tHU/eetzygFby9ALhWg657P0Vlxhk7yvMRgnFnqIqDPbfSnPXqspf3GbIAlO5M83cfNlj7o4vU4DbNoZfn1VBXpc3xO+dx9U7IrG5a5Rihd6Bcmmogr8DREekK2zKiwkNKYuDyLxKxfhNt9huhfBfg0TV4NRv540qb/MZPHGv3KLZrn1DBYwuRIg2sktKnSqEh/tRu7/+z8Mj+1hknhTQEXlzglXQao3dhbjE+SNGNzSrzJ9NE3kFEZdxQTEk6qdJtWG6dX1G7jlBZYzcanLpM2pEUW3aBc0Cti1PdoCD6paFxKacbjUPbRALwI5HLWalJGM8I/ZrteUP8Thea23B+XgX7AwwRuAdjpdcVBUDIbxOpjRg/juWPJss5BnIPWn2w="    
             };
             
             Website.bindUiActions();
@@ -44,11 +45,31 @@ loadvideoUrl("DBdTFj3x2dQ");
         },
 
         bindUiActions : function(){
-
-            $('#submit-contact').on('click', Website._submitContact);
+            $('#submit-contact').on('click', Website.submitContact);
+            $(window).scroll( Website.scrollSpy );
         },
 
-        _submitContact : function(){
+        scrollSpy     : function(){
+            var currentOffset   = $(window).scrollTop();
+            var aboutUsOffset   = $("#aboutus").offset().top;
+            var contactUsOffset = $("#contactus").offset().top;
+            
+            $('.menu').removeClass('active');
+
+            if ( currentOffset < aboutUsOffset ) {
+                $("#menu-home").addClass('active'); 
+            }
+
+            else if (currentOffset >= aboutUsOffset && currentOffset < contactUsOffset ){
+                $("#menu-about-us").addClass('active'); 
+            }
+
+            else if (currentOffset >= contactUsOffset){
+                $("#menu-contact-us").addClass('active'); 
+            }
+        },
+
+        submitContact : function(){
             var formData = $("#contact-form").serialize();
 
             var headers   = {
@@ -57,7 +78,7 @@ loadvideoUrl("DBdTFj3x2dQ");
                 "Content-Type"  : "application/x-www-form-urlencoded"
             };
 
-            Website._loading();
+            Website._loading(this);
 
             $.ajax({
                 url  : Website.config.endpoint,
@@ -74,22 +95,54 @@ loadvideoUrl("DBdTFj3x2dQ");
         },
 
         // Executes before ajax request
-        _loading : function(){
-            console.log("Loading...");
+        _loading : function(btn){
+            $(btn).addClass('disabled');
+            $(btn).button('loading');
+
         },
 
         // Executes after ajax request
         _showMsg : function(){
             console.log("Contact Saved")
-
+            $("#contact-form").find('input').val("");
+            $("#contact-form").find('textarea').val("");
+            $("#modal-success").modal();
+            $('#submit-contact').removeClass('disabled');
+            $('#submit-contact').button('reset');
         },
 
         // Executes if ajax request failed
-        _errorMsg : function(){
-            console.log("Error Found");
+        _errorMsg : function(jqXHR){
+            $('#submit-contact').removeClass('disabled');
+            $('#submit-contact').button('reset');
+
+            var response = jqXHR.responseJSON;
+
+            if(response.status == "failure") {
+                $("#modal-invalid-form").modal();
+            }
         }
 
     };
-
+    // $(document).on('ready', Website.init)
     Website.init();
 }());
+
+
+// Google Analytics
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85619117-1', 'auto');
+  ga('send', 'pageview');
+
+
+// Hubspot Leadin : Async HubSpot Analytics Code 
+(function(d,s,i,r) {
+  if (d.getElementById(i)){return;}
+  var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+  n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2315168.js';
+  e.parentNode.insertBefore(n, e);
+})(document,"script","hs-analytics",300000);
